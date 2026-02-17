@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+<title>Kangourou Maths</title>
+<meta name="description" content="Fiches d'exercices maths imprimables pour CP, CE2 et CM2"/>
+<meta name="theme-color" content="#0f172a"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+<meta name="apple-mobile-web-app-title" content="Kangourou"/>
+<link rel="apple-touch-icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxOTIgMTkyIj48cmVjdCB3aWR0aD0iMTkyIiBoZWlnaHQ9IjE5MiIgcng9IjQwIiBmaWxsPSIjMGYxNzJhIi8+PHRleHQgeD0iOTYiIHk9IjEyMCIgZm9udC1zaXplPSIxMDAiIHRleHQtYW5jaG9yPSJtaWRkbGUiPvCfppg8L3RleHQ+PHRleHQgeD0iOTYiIHk9IjE3MCIgZm9udC1zaXplPSIyMiIgZmlsbD0iI2Y4ZmFmYyIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC13ZWlnaHQ9IjgwMCI+TUFUSFM8L3RleHQ+PC9zdmc+"/>
+<link rel="manifest" href="data:application/json;base64,eyJuYW1lIjoiS2FuZ291cm91IE1hdGhzIiwic2hvcnRfbmFtZSI6IkthbmdvdXJvdSIsInN0YXJ0X3VybCI6Ii4iLCJkaXNwbGF5Ijoic3RhbmRhbG9uZSIsImJhY2tncm91bmRfY29sb3IiOiIjMGYxNzJhIiwidGhlbWVfY29sb3IiOiIjMGYxNzJhIiwiaWNvbnMiOlt7InNyYyI6ImRhdGE6aW1hZ2Uvc3ZnK3htbDtiYXNlNjQsUEhOMlp5QjRiV3h1Y3owaWFIUjBjRG92TDNkM2R5NTNNeTV2Y21jdk1qQXdNQzl6ZG1jaUlIWnBaWGRDYjNnOUlqQWdNQ0F4T1RJZ01Ua3lJajQ4Y21WamRDQjNhV1IwYUQwaU1Ua3lJaUJvWldsbmFIUTlJakU1TWlJZ2NuZzlJalF3SWlCbWFXeHNQU0lqTUdZeE56SmhJaTgrUEhSbGVIUWdlRDBpT1RZaUlIazlJakV5TUNJZ1ptOXVkQzF6YVhwbFBTSXhNREFpSUhSbGVIUXRZVzVqYUc5eVBTSnRhV1JrYkdVaVBwQ2ZwcGc4TDNSbGVIUStQSFJsZUhRZ2VEMGlPVFlpSUhrOUlqRTNNQ0lnWm05dWRDMXphWHBsUFNJeU1pSWdabWxzYkQwaUkyWTRabUZtWXlJZ2RHVjRkQzFoYm1Ob2IzSTlJbTFwWkdSc1pTSWdabTl1ZEMxM1pXbG5hSFE5SWpnd01DSStiV0YwYUhNOEwzUmxlSFErUEM5emRtYysiLCJzaXplcyI6IjE5MngxOTIiLCJ0eXBlIjoiaW1hZ2Uvc3ZnK3htbCJ9XX0="/>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Nunito','Segoe UI',system-ui,sans-serif;background:#0f172a;color:#f8fafc;min-height:100vh;-webkit-tap-highlight-color:transparent}
+.page{min-height:100vh;padding:16px}
+
+/* CONFIG */
+.config-card{max-width:480px;margin:30px auto;background:rgba(255,255,255,.05);backdrop-filter:blur(20px);border-radius:24px;border:1px solid rgba(255,255,255,.1);padding:36px 28px;text-align:center}
+.config-logo{font-size:52px;margin-bottom:6px}
+.config-title{font-size:24px;font-weight:800;margin:0 0 4px}
+.config-sub{color:#64748b;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:28px}
+.form-group{margin-bottom:22px;text-align:left}
+.lbl{display:block;color:#94a3b8;font-size:13px;font-weight:700;margin-bottom:8px}
+.inp{width:100%;padding:12px 16px;border-radius:12px;border:1px solid rgba(255,255,255,.15);background:rgba(255,255,255,.06);color:#f8fafc;font-size:15px;outline:none;font-family:inherit}
+.toggle-row{display:flex;gap:10px}
+.toggle-btn{flex:1;padding:13px 6px;border-radius:14px;border:2px solid rgba(255,255,255,.1);background:rgba(255,255,255,.04);color:#94a3b8;font-size:15px;font-weight:700;cursor:pointer;transition:all .15s;font-family:inherit}
+.toggle-btn.active{color:#fff;border-color:transparent}
+.diff-btn{flex:1;padding:10px 4px;border-radius:12px;border:2px solid rgba(255,255,255,.1);background:rgba(255,255,255,.04);color:#94a3b8;font-size:11px;font-weight:700;cursor:pointer;transition:all .15s;text-align:center;font-family:inherit}
+.diff-btn.active{color:#fff;border-color:transparent}
+.slider{width:100%;accent-color:#6366f1}
+.slider-labels{display:flex;justify-content:space-between;color:#64748b;font-size:12px}
+.cb-label{display:flex;align-items:center;gap:10px;color:#cbd5e1;font-size:14px;cursor:pointer}
+.cb-label input{width:18px;height:18px}
+.gen-btn{width:100%;padding:16px;border:none;border-radius:14px;color:#fff;font-size:17px;font-weight:800;cursor:pointer;margin-top:8px;font-family:inherit}
+
+/* TOOLBAR */
+.toolbar{max-width:820px;margin:16px auto 0;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
+.tool-actions{display:flex;gap:8px}
+.tool-btn{padding:10px 18px;border-radius:12px;border:1px solid rgba(255,255,255,.15);background:rgba(255,255,255,.06);color:#cbd5e1;font-size:14px;font-weight:600;cursor:pointer;font-family:inherit}
+.tool-primary{padding:10px 22px;border-radius:12px;border:none;color:#fff;font-size:14px;font-weight:700;cursor:pointer;font-family:inherit}
+
+/* SHEET */
+.sheet{max-width:820px;margin:16px auto 40px;background:#fff;border-radius:8px;padding:40px 36px 30px;color:#1e293b;line-height:1.6}
+.sheet-header{display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:16px}
+.sheet-left{display:flex;align-items:center;gap:14px}
+.sheet-logo{font-size:36px}
+.sheet-title{font-size:20px;font-weight:800;color:#0f172a}
+.sheet-level{font-size:12px;color:#64748b;margin-top:2px}
+.sheet-right{text-align:right}
+.sheet-right p{font-size:12px;color:#64748b;margin:0 0 4px}
+.sheet-right strong{color:#334155}
+.divider{height:2px;background:#e2e8f0;margin:20px 0;border-radius:1px}
+
+.problem{margin-bottom:26px;padding-bottom:22px;border-bottom:1px solid #f1f5f9}
+.problem-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+.problem-num{font-size:14px;font-weight:800;color:#334155}
+.problem-theme{font-size:11px;font-weight:700;color:#6366f1;background:#eef2ff;padding:3px 10px;border-radius:20px}
+.problem-text{font-size:14px;color:#1e293b;line-height:1.7;margin:4px 0 12px}
+.problem svg{display:block;margin:8px auto}
+
+.choices{display:flex;flex-wrap:wrap;gap:8px}
+.choice{display:flex;align-items:center;gap:8px;padding:8px 14px;border:1.5px solid #e2e8f0;border-radius:10px;background:#f8fafc;min-width:90px}
+.choice-letter{font-size:12px;font-weight:800;color:#6366f1}
+.choice-val{font-size:14px;font-weight:600;color:#334155;flex:1}
+.choice-o{font-size:18px;color:#cbd5e1}
+
+.page-break{page-break-before:always;height:1px}
+.answer-page{padding-top:8px}
+.answer-title{font-size:18px;font-weight:800;color:#0f172a;margin:0 0 4px}
+.answer-block{margin-bottom:14px;padding:10px 14px;background:#f0fdf4;border-radius:10px;border-left:4px solid #22c55e}
+.answer-head{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;margin-bottom:4px}
+.answer-num{font-size:12px;font-weight:800;color:#334155}
+.answer-correct{font-size:12px;font-weight:700;color:#16a34a}
+.answer-expl{font-size:12px;color:#334155;line-height:1.6}
+
+@media print{
+  body{margin:0;padding:0;background:#fff}
+  .toolbar,.no-print{display:none!important}
+  .page{padding:0;background:#fff}
+  .sheet{margin:0;border-radius:0;box-shadow:none;padding:24px}
+  @page{margin:1.5cm;size:A4}
+}
+@media(max-width:600px){
+  .sheet{padding:20px 16px}
+  .config-card{padding:28px 20px;margin:16px auto}
+  .choice{min-width:70px;padding:6px 10px}
+}
+</style>
+</head>
+<body>
+<div id="app" class="page"></div>
+
+<script>
+// ============================================
+// DATA
+// ============================================
+const PROBLEMS={
+CP:{
+facile:[
+{q:"Maman met 4 pommes dans un panier, puis elle en ajoute 3. Combien y a-t-il de pommes ?",c:["5","6","7","8"],a:2,e:"4 + 3 = 7 pommes.",t:"Compter",
+s:`<svg viewBox="0 0 260 60" style="width:100%;max-width:240px"><text x="15" y="30" font-size="22">🍎</text><text x="45" y="30" font-size="22">🍎</text><text x="75" y="30" font-size="22">🍎</text><text x="105" y="30" font-size="22">🍎</text><text x="135" y="32" font-size="20" fill="#64748b">+</text><text x="155" y="30" font-size="22">🍏</text><text x="185" y="30" font-size="22">🍏</text><text x="215" y="30" font-size="22">🍏</text><text x="130" y="55" font-size="11" fill="#64748b" text-anchor="middle">= ?</text></svg>`},
+{q:"Lucas a 9 billes. Il en perd 3. Combien lui en reste-t-il ?",c:["5","6","7","12"],a:1,e:"9 − 3 = 6 billes.",t:"Compter",
+s:`<svg viewBox="0 0 260 60" style="width:100%;max-width:240px"><circle cx="20" cy="20" r="10" fill="#6366f1"/><circle cx="48" cy="20" r="10" fill="#6366f1"/><circle cx="76" cy="20" r="10" fill="#6366f1"/><circle cx="104" cy="20" r="10" fill="#6366f1"/><circle cx="132" cy="20" r="10" fill="#6366f1"/><circle cx="160" cy="20" r="10" fill="#6366f1"/><circle cx="190" cy="20" r="10" fill="#fecaca" stroke="#ef4444" stroke-dasharray="3,2"/><line x1="183" y1="13" x2="197" y2="27" stroke="#ef4444" stroke-width="1.5"/><circle cx="218" cy="20" r="10" fill="#fecaca" stroke="#ef4444" stroke-dasharray="3,2"/><line x1="211" y1="13" x2="225" y2="27" stroke="#ef4444" stroke-width="1.5"/><circle cx="246" cy="20" r="10" fill="#fecaca" stroke="#ef4444" stroke-dasharray="3,2"/><line x1="239" y1="13" x2="253" y2="27" stroke="#ef4444" stroke-width="1.5"/><text x="130" y="50" font-size="11" fill="#64748b" text-anchor="middle">Il reste ?</text></svg>`},
+{q:"Combien de pattes ont 2 chiens ?",c:["4","6","8","10"],a:2,e:"4 + 4 = 8 pattes.",t:"Compter"},
+{q:"Quel nombre vient juste après 14 ?",c:["13","15","16","10"],a:1,e:"Après 14, c'est 15.",t:"Nombres"},
+{q:"Il est 3 heures. Dans 2 heures, quelle heure ?",c:["4 heures","5 heures","6 heures","1 heure"],a:1,e:"3 + 2 = 5 heures.",t:"Heures"},
+{q:"Quel est le plus grand : 8, 12, 5 ou 9 ?",c:["8","12","5","9"],a:1,e:"12 est le plus grand.",t:"Nombres"},
+],
+moyen:[
+{q:"5 oiseaux sur une branche. 2 s'envolent, 4 arrivent. Combien ?",c:["3","5","7","9"],a:2,e:"5 − 2 + 4 = 7.",t:"Compter"},
+{q:"Emma a 2 bonbons de plus que son frère (5). Combien en a Emma ?",c:["3","5","7","10"],a:2,e:"5 + 2 = 7.",t:"Compter"},
+{q:"Suite : 2, 4, 6, 8, ... ?",c:["9","10","11","12"],a:1,e:"On compte de 2 en 2 → 10.",t:"Suite",
+s:`<svg viewBox="0 0 280 55" style="width:100%;max-width:260px"><circle cx="30" cy="22" r="18" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/><text x="30" y="28" font-size="16" fill="#1e40af" text-anchor="middle" font-weight="bold">2</text><circle cx="85" cy="22" r="18" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/><text x="85" y="28" font-size="16" fill="#1e40af" text-anchor="middle" font-weight="bold">4</text><circle cx="140" cy="22" r="18" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/><text x="140" y="28" font-size="16" fill="#1e40af" text-anchor="middle" font-weight="bold">6</text><circle cx="195" cy="22" r="18" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/><text x="195" y="28" font-size="16" fill="#1e40af" text-anchor="middle" font-weight="bold">8</text><circle cx="250" cy="22" r="18" fill="#fef9c3" stroke="#eab308" stroke-width="2" stroke-dasharray="4,3"/><text x="250" y="28" font-size="16" fill="#a16207" text-anchor="middle" font-weight="bold">?</text></svg>`},
+{q:"Pizza coupée en 4 parts. Papa en mange 1. Il reste ?",c:["1","2","3","4"],a:2,e:"4 − 1 = 3 parts.",t:"Partage",
+s:`<svg viewBox="0 0 160 120" style="width:100%;max-width:140px"><circle cx="80" cy="55" r="45" fill="#fef3c7" stroke="#d97706" stroke-width="2"/><line x1="80" y1="10" x2="80" y2="100" stroke="#d97706" stroke-width="1.5"/><line x1="35" y1="55" x2="125" y2="55" stroke="#d97706" stroke-width="1.5"/><path d="M80 55L80 10A45 45 0 0 1 125 55Z" fill="#e5e7eb" stroke="#d97706" stroke-width="1.5"/><text x="100" y="38" font-size="10" fill="#9ca3af">mangée</text><text x="80" y="115" font-size="11" fill="#64748b" text-anchor="middle">Il reste ?</text></svg>`},
+{q:"Combien de pattes ont 3 chats ?",c:["6","8","10","12"],a:3,e:"4 + 4 + 4 = 12 pattes.",t:"Compter",
+s:`<svg viewBox="0 0 240 65" style="width:100%;max-width:220px"><text x="25" y="28" font-size="28">🐱</text><text x="35" y="55" font-size="11" fill="#64748b" text-anchor="middle">4 pattes</text><text x="105" y="28" font-size="28">🐱</text><text x="115" y="55" font-size="11" fill="#64748b" text-anchor="middle">4 pattes</text><text x="185" y="28" font-size="28">🐱</text><text x="195" y="55" font-size="11" fill="#64748b" text-anchor="middle">4 pattes</text></svg>`},
+{q:"Sarah a 10 images, en donne 4 à Léa et 2 à Tom. Reste ?",c:["2","4","6","8"],a:1,e:"10 − 4 − 2 = 4.",t:"Compter"},
+],
+difficile:[
+{q:"Léo a 3 boîtes de 6 jouets mais une n'en a que 4. Total ?",c:["14","16","18","22"],a:1,e:"2×6 + 4 = 16.",t:"Compter"},
+{q:"Plus de côtés : triangle, carré ou rond ?",c:["Triangle","Carré","Rond","Pareil"],a:1,e:"Carré : 4 côtés > triangle : 3.",t:"Formes",
+s:`<svg viewBox="0 0 280 80" style="width:100%;max-width:260px"><polygon points="50,15 20,65 80,65" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/><text x="50" y="78" font-size="9" fill="#64748b" text-anchor="middle">3 côtés</text><rect x="115" y="15" width="50" height="50" fill="#dbeafe" stroke="#3b82f6" stroke-width="2"/><text x="140" y="78" font-size="9" fill="#64748b" text-anchor="middle">4 côtés</text><circle cx="230" cy="40" r="25" fill="#fce7f3" stroke="#ec4899" stroke-width="2"/><text x="230" y="78" font-size="9" fill="#64748b" text-anchor="middle">0 côté</text></svg>`},
+{q:"Escargot : +2 cases, −1 case. Après 4 tours ?",c:["2","3","4","5"],a:2,e:"Chaque tour : +1. 4 tours = case 4.",t:"Logique"},
+{q:"Suite : 1, 3, 5, 7, ... ?",c:["8","9","10","11"],a:1,e:"+2 à chaque fois. Après 7 : 9.",t:"Suite"},
+{q:"3 billets de 5 € et 2 pièces de 2 €. Total ?",c:["17 €","19 €","21 €","13 €"],a:1,e:"15 + 4 = 19 €.",t:"Monnaie"},
+{q:"Plus grand : 17, 13, 19, 15 ?",c:["17","13","19","15"],a:2,e:"19 est le plus grand.",t:"Nombres"},
+]},
+CE2:{
+facile:[
+{q:"3 paquets de 6 bonbons, on en donne 5. Reste ?",c:["12","13","14","15"],a:1,e:"18 − 5 = 13.",t:"Calcul"},
+{q:"4 rangées de 7 chaises, 3 cassées. Utilisables ?",c:["24","25","28","31"],a:1,e:"28 − 3 = 25.",t:"Calcul"},
+{q:"50 c − gomme 15 c − crayon 20 c. Reste ?",c:["10 c","15 c","25 c","35 c"],a:1,e:"50 − 35 = 15 c.",t:"Monnaie"},
+{q:"Rectangle 8 cm × 3 cm. Périmètre ?",c:["11 cm","22 cm","24 cm","16 cm"],a:1,e:"2×(8+3) = 22 cm.",t:"Géométrie",
+s:`<svg viewBox="0 0 220 100" style="width:100%;max-width:200px"><rect x="20" y="20" width="160" height="60" fill="none" stroke="#6366f1" stroke-width="2"/><text x="100" y="15" font-size="10" fill="#334155" text-anchor="middle">8 cm</text><text x="190" y="55" font-size="10" fill="#334155">3 cm</text></svg>`},
+{q:"3 billets de 5 € + 4 pièces de 2 €. Total ?",c:["19 €","23 €","22 €","17 €"],a:1,e:"15 + 8 = 23 €.",t:"Monnaie"},
+{q:"Moitié de la moitié de 100 ?",c:["50","25","20","10"],a:1,e:"100÷2=50, 50÷2=25.",t:"Calcul"},
+],
+moyen:[
+{q:"Escargot : +3 m jour, −1 m nuit. Après 3 cycles ?",c:["3 m","6 m","9 m","7 m"],a:1,e:"+2 m/cycle × 3 = 6 m.",t:"Logique",
+s:`<svg viewBox="0 0 200 140" style="width:100%;max-width:180px"><rect x="30" y="10" width="12" height="120" fill="#d4c5a9" stroke="#a08b6d" stroke-width="1.5" rx="2"/><text x="50" y="134" font-size="9" fill="#64748b">0m</text><text x="50" y="120" font-size="9" fill="#64748b">1m</text><text x="50" y="106" font-size="9" fill="#64748b">2m</text><text x="50" y="92" font-size="9" fill="#64748b">3m</text><text x="50" y="78" font-size="9" fill="#64748b">4m</text><text x="50" y="64" font-size="9" fill="#64748b">5m</text><text x="50" y="50" font-size="9" fill="#64748b">6m</text><text x="18" y="52" font-size="14">🐌</text></svg>`},
+{q:"Marie a le double de son frère (4 ans). Son âge dans 3 ans ?",c:["8","10","11","14"],a:2,e:"8 + 3 = 11 ans.",t:"Logique"},
+{q:"Carré : périmètre 20 cm. Un côté ?",c:["4 cm","5 cm","10 cm","20 cm"],a:1,e:"20 ÷ 4 = 5 cm.",t:"Géométrie",
+s:`<svg viewBox="0 0 180 140" style="width:100%;max-width:160px"><rect x="30" y="20" width="100" height="100" fill="none" stroke="#6366f1" stroke-width="2"/><text x="75" y="15" font-size="10" fill="#6366f1" text-anchor="middle">? cm</text><text x="140" y="75" font-size="10" fill="#6366f1">? cm</text><text x="75" y="138" font-size="10" fill="#64748b" text-anchor="middle">P = 20 cm</text></svg>`},
+{q:"32 passagers. −8, +5. Combien ?",c:["25","27","29","35"],a:2,e:"32−8+5 = 29.",t:"Calcul"},
+{q:"Diagonales d'un carré → combien de triangles ?",c:["2","3","4","8"],a:2,e:"4 triangles.",t:"Géométrie",
+s:`<svg viewBox="0 0 140 130" style="width:100%;max-width:130px"><rect x="15" y="10" width="100" height="100" fill="none" stroke="#334155" stroke-width="2"/><line x1="15" y1="10" x2="115" y2="110" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="5,3"/><line x1="115" y1="10" x2="15" y2="110" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="5,3"/><text x="65" y="50" font-size="14" fill="#6366f1" text-anchor="middle" font-weight="bold">?</text></svg>`},
+{q:"24 billes, 3 enfants. 1er = double du 2e, 3e = 2e. Le 1er ?",c:["6","8","10","12"],a:3,e:"4 parts → x=6. 1er : 12.",t:"Logique"},
+],
+difficile:[
+{q:"6 rangées × 8 tulipes − 13 mangées. Reste ?",c:["31","35","39","41"],a:1,e:"48 − 13 = 35.",t:"Calcul"},
+{q:"75 c, bonbon à 12 c. Max achetable ?",c:["5","6","7","8"],a:1,e:"75÷12 = 6 reste 3.",t:"Monnaie"},
+{q:"Triangle : 5+7+4 cm. Périmètre ?",c:["12 cm","14 cm","16 cm","19 cm"],a:2,e:"5+7+4 = 16 cm.",t:"Géométrie"},
+{q:"Nombre entre 30 et 40, chiffres somment à 8 ?",c:["35","36","37","44"],a:0,e:"35 : 3+5 = 8 ✓",t:"Logique"},
+{q:"125 cm, 118 cm, 131 cm. Écart max ?",c:["6 cm","7 cm","13 cm","16 cm"],a:2,e:"131−118 = 13 cm.",t:"Calcul"},
+{q:"48 œufs, boîtes de 6. Combien de boîtes ?",c:["6","7","8","9"],a:2,e:"48÷6 = 8.",t:"Calcul"},
+]},
+CM2:{
+facile:[
+{q:"Train : 8h15 → 10h42. Durée ?",c:["2h17","2h27","2h37","3h27"],a:1,e:"2h + 27min = 2h27.",t:"Durées"},
+{q:"15 stylos achetés 2 €, vendus 3,50 €. Bénéfice ?",c:["15 €","22,50 €","30 €","52,50 €"],a:1,e:"52,50−30 = 22,50 €.",t:"Monnaie"},
+{q:"30 élèves : 2/5 foot, 1/3 basket. Autre sport ?",c:["6","8","10","12"],a:1,e:"30−12−10 = 8.",t:"Fractions"},
+{q:"Jouet 40 € → 30 €. % de réduction ?",c:["10 %","20 %","25 %","30 %"],a:2,e:"10/40 = 25 %.",t:"Pourcentages"},
+{q:"Rectangle : aire 36 cm², largeur 4 cm. Périmètre ?",c:["20 cm","22 cm","26 cm","40 cm"],a:2,e:"L=9. P=2×13=26 cm.",t:"Géométrie",
+s:`<svg viewBox="0 0 240 100" style="width:100%;max-width:210px"><rect x="20" y="20" width="180" height="65" fill="#eef2ff" stroke="#6366f1" stroke-width="2"/><text x="110" y="58" font-size="11" fill="#6366f1" text-anchor="middle" font-weight="bold">36 cm²</text><text x="110" y="14" font-size="10" fill="#334155" text-anchor="middle">? cm</text><text x="208" y="58" font-size="10" fill="#334155">4 cm</text></svg>`},
+{q:"Plus petit nombre ÷3, ÷4 ET ÷5 ?",c:["12","30","60","120"],a:2,e:"PPCM = 60.",t:"Nombres"},
+],
+moyen:[
+{q:"Feuille pliée 2×, 1 coin coupé. Trous ?",c:["1","2","4","8"],a:2,e:"4 épaisseurs → 4 trous.",t:"Logique",
+s:`<svg viewBox="0 0 300 70" style="width:100%;max-width:280px"><rect x="5" y="8" width="55" height="50" fill="#e0f2fe" stroke="#334155" stroke-width="1.5" rx="2"/><text x="32" y="38" font-size="7" fill="#64748b" text-anchor="middle">Feuille</text><text x="72" y="36" font-size="12" fill="#94a3b8">→</text><rect x="85" y="8" width="28" height="50" fill="#bae6fd" stroke="#334155" stroke-width="1.5" rx="2"/><text x="99" y="38" font-size="6" fill="#64748b" text-anchor="middle">Pli 1</text><text x="125" y="36" font-size="12" fill="#94a3b8">→</text><rect x="140" y="20" width="28" height="25" fill="#7dd3fc" stroke="#334155" stroke-width="1.5" rx="2"/><text x="154" y="36" font-size="6" fill="#334155" text-anchor="middle">Pli 2</text><text x="180" y="36" font-size="12" fill="#94a3b8">→</text><rect x="195" y="20" width="28" height="25" fill="#7dd3fc" stroke="#334155" stroke-width="1.5" rx="2"/><circle cx="218" cy="26" r="4" fill="#fff" stroke="#ef4444" stroke-width="1.5"/><text x="235" y="36" font-size="12" fill="#94a3b8">→</text><rect x="250" y="8" width="40" height="50" fill="#e0f2fe" stroke="#334155" stroke-width="1.5" rx="2"/><circle cx="258" cy="16" r="3" fill="#fff" stroke="#ef4444"/><circle cx="282" cy="16" r="3" fill="#fff" stroke="#ef4444"/><circle cx="258" cy="50" r="3" fill="#fff" stroke="#ef4444"/><circle cx="282" cy="50" r="3" fill="#fff" stroke="#ef4444"/><text x="270" y="38" font-size="9" fill="#6366f1" text-anchor="middle" font-weight="bold">?</text></svg>`},
+{q:"42 billes, 3 amis. 1er=2×2e, 3e=½×2e. Le 2e ?",c:["6","12","14","21"],a:1,e:"7 parts. 42÷7=6. 2e=12.",t:"Logique"},
+{q:"12 km en 45 min. Distance en 1h30 ?",c:["18 km","20 km","24 km","30 km"],a:2,e:"×2 → 24 km.",t:"Proportionnalité"},
+{q:"Jardin 12×8 m, allée 1 m intérieure. Aire cultivable ?",c:["56 m²","60 m²","72 m²","96 m²"],a:1,e:"10×6 = 60 m².",t:"Géométrie",
+s:`<svg viewBox="0 0 240 160" style="width:100%;max-width:220px"><rect x="15" y="15" width="190" height="120" fill="#d1d5db" stroke="#334155" stroke-width="2" rx="3"/><rect x="35" y="35" width="150" height="80" fill="#bbf7d0" stroke="#16a34a" stroke-width="1.5" rx="2"/><text x="110" y="80" font-size="11" fill="#166534" text-anchor="middle" font-weight="bold">?</text><text x="110" y="152" font-size="9" fill="#334155" text-anchor="middle">12 m</text><text x="220" y="80" font-size="9" fill="#334155">8 m</text><text x="25" y="30" font-size="8" fill="#64748b">1m</text></svg>`},
+{q:"2 dés. Combien de façons de faire 7 ?",c:["3","5","6","7"],a:2,e:"6 combinaisons.",t:"Logique"},
+{q:"Piscine 25×10×2 m. Volume ?",c:["250 m³","500 m³","370 m³","50 m³"],a:1,e:"25×10×2 = 500 m³.",t:"Géométrie"},
+],
+difficile:[
+{q:"Robinet A : 12 min. B : 6 min. Ensemble ?",c:["3 min","4 min","6 min","9 min"],a:1,e:"1/12+1/6=1/4 → 4 min.",t:"Logique"},
+{q:"Carré même aire que rectangle 16×4. Son côté ?",c:["6 cm","8 cm","10 cm","20 cm"],a:1,e:"√64 = 8 cm.",t:"Géométrie"},
+{q:"3 nombres consécutifs, somme 96. Le plus petit ?",c:["30","31","32","33"],a:1,e:"3x+3=96 → x=31.",t:"Logique"},
+{q:"80 € : +10 % puis −10 %. Prix final ?",c:["79,20 €","80 €","80,80 €","81 €"],a:0,e:"88−8,80 = 79,20 €.",t:"Pourcentages"},
+{q:"Triangle rect. : 3 cm et 4 cm. Hypoténuse ?",c:["5 cm","6 cm","7 cm","8 cm"],a:0,e:"√(9+16) = 5 cm.",t:"Géométrie"},
+{q:"5 ouvriers, 8 jours. Avec 10 ouvriers ?",c:["2 j","4 j","8 j","16 j"],a:1,e:"2× plus → 2× vite. 4 j.",t:"Proportionnalité"},
+]}
+};
+
+const COLORS={CP:"#22c55e",CE2:"#f59e0b",CM2:"#6366f1"};
+const EMOJIS={CP:"🐥",CE2:"🐣",CM2:"🦊"};
+const DIFFS={facile:"⭐ Facile",moyen:"⭐⭐ Moyen",difficile:"⭐⭐⭐ Difficile"};
+const LETTERS=["A","B","C","D"];
+
+function shuffle(a){a=[...a];for(let i=a.length-1;i>0;i--){let j=Math.random()*i+1|0;[a[i],a[j]]=[a[j],a[i]]}return a}
+
+// ============================================
+// APP STATE
+// ============================================
+let state={screen:"config",level:"CE2",diff:"facile",count:6,answers:false,name:"",problems:[]};
+
+function poolSize(){return PROBLEMS[state.level][state.diff].length}
+function color(){return COLORS[state.level]}
+
+function generate(){
+  const pool=PROBLEMS[state.level][state.diff];
+  const n=Math.min(state.count,pool.length);
+  state.problems=shuffle(pool).slice(0,n);
+  state.screen="sheet";
+  render();
+}
+
+function setLevel(lv){state.level=lv;state.diff="facile";state.count=Math.min(state.count,poolSize());render()}
+function setDiff(d){state.diff=d;state.count=Math.min(state.count,poolSize());render()}
+function goConfig(){state.screen="config";render()}
+
+function render(){
+  const app=document.getElementById("app");
+  if(state.screen==="config") app.innerHTML=renderConfig();
+  else app.innerHTML=renderSheet();
+  bindEvents();
+}
+
+function renderConfig(){
+  const ps=poolSize();const c=color();const cnt=Math.min(state.count,ps);
+  return `<div class="config-card">
+  <div class="config-logo">🦘</div>
+  <h1 class="config-title">Générateur de Fiches</h1>
+  <p class="config-sub">Kangourou Maths — Résolution de problèmes</p>
+  <div class="form-group">
+    <label class="lbl">Prénom de l'enfant (optionnel)</label>
+    <input class="inp" id="nameInput" value="${state.name}" placeholder="Ex : Adam, Sarah..."/>
+  </div>
+  <div class="form-group">
+    <label class="lbl">Niveau</label>
+    <div class="toggle-row">
+      ${["CP","CE2","CM2"].map(lv=>`<button class="toggle-btn${state.level===lv?' active':''}" data-level="${lv}" style="${state.level===lv?'background:'+COLORS[lv]+';color:#fff':''}">${EMOJIS[lv]} ${lv}</button>`).join("")}
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="lbl">Difficulté</label>
+    <div class="toggle-row">
+      ${["facile","moyen","difficile"].map(d=>`<button class="diff-btn${state.diff===d?' active':''}" data-diff="${d}" style="${state.diff===d?'background:'+c+';color:#fff':''}">${DIFFS[d]}</button>`).join("")}
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="lbl">Nombre d'exercices : ${cnt}</label>
+    <input type="range" class="slider" id="countSlider" min="3" max="${ps}" value="${cnt}" style="accent-color:${c}"/>
+    <div class="slider-labels"><span>3</span><span>${ps}</span></div>
+  </div>
+  <div class="form-group">
+    <label class="cb-label"><input type="checkbox" id="answersCheck" ${state.answers?'checked':''} style="accent-color:${c}"/> Inclure le corrigé</label>
+  </div>
+  <button class="gen-btn" id="genBtn" style="background:${c}">📄 Générer la fiche</button>
+</div>`;
+}
+
+function renderSheet(){
+  const c=color();const lv=state.level;const probs=state.problems;
+  let h=`<div class="toolbar no-print">
+    <button class="tool-btn" id="backBtn">← Retour</button>
+    <div class="tool-actions">
+      <button class="tool-btn" id="regenBtn">🔄 Regénérer</button>
+      <button class="tool-primary" id="printBtn" style="background:${c}">🖨️ Imprimer</button>
+    </div>
+  </div>
+  <div class="sheet">
+    <div class="sheet-header">
+      <div class="sheet-left">
+        <span class="sheet-logo">🦘</span>
+        <div><div class="sheet-title">Kangourou Maths</div><div class="sheet-level">${EMOJIS[lv]} ${lv} — ${DIFFS[state.diff]}</div></div>
+      </div>
+      <div class="sheet-right">
+        ${state.name?`<p>Prénom : <strong>${state.name}</strong></p>`:''}
+        <p>Date : ____/____/________</p>
+        <p style="font-weight:700">Score : ____/${probs.length}</p>
+      </div>
+    </div>
+    <div class="divider"></div>`;
+
+  probs.forEach((pb,i)=>{
+    h+=`<div class="problem">
+      <div class="problem-head">
+        <span class="problem-num">Exercice ${i+1}</span>
+        <span class="problem-theme">${pb.t}</span>
+      </div>
+      <p class="problem-text">${pb.q}</p>
+      ${pb.s?pb.s:''}
+      <div class="choices">
+        ${pb.c.map((ch,ci)=>`<div class="choice"><span class="choice-letter">${LETTERS[ci]}</span><span class="choice-val">${ch}</span><span class="choice-o">○</span></div>`).join("")}
+      </div>
+    </div>`;
+  });
+
+  if(state.answers){
+    h+=`<div class="page-break"></div>
+    <div class="answer-page">
+      <h2 class="answer-title">🦘 Corrigé — ${EMOJIS[lv]} ${lv} ${DIFFS[state.diff]}</h2>
+      <div class="divider"></div>`;
+    probs.forEach((pb,i)=>{
+      h+=`<div class="answer-block">
+        <div class="answer-head">
+          <span class="answer-num">Exercice ${i+1}</span>
+          <span class="answer-correct">${LETTERS[pb.a]} — ${pb.c[pb.a]}</span>
+        </div>
+        <p class="answer-expl">${pb.e}</p>
+      </div>`;
+    });
+    h+=`</div>`;
+  }
+  h+=`</div>`;
+  return h;
+}
+
+function bindEvents(){
+  // Config
+  document.querySelectorAll('[data-level]').forEach(b=>b.onclick=()=>setLevel(b.dataset.level));
+  document.querySelectorAll('[data-diff]').forEach(b=>b.onclick=()=>setDiff(b.dataset.diff));
+  const ni=document.getElementById('nameInput');if(ni)ni.oninput=()=>{state.name=ni.value};
+  const cs=document.getElementById('countSlider');if(cs)cs.oninput=()=>{state.count=+cs.value;document.querySelector('.lbl:nth-of-type(1)');render()};
+  const ac=document.getElementById('answersCheck');if(ac)ac.onchange=()=>{state.answers=ac.checked};
+  const gb=document.getElementById('genBtn');if(gb)gb.onclick=generate;
+  // Sheet
+  const bb=document.getElementById('backBtn');if(bb)bb.onclick=goConfig;
+  const rb=document.getElementById('regenBtn');if(rb)rb.onclick=generate;
+  const pb=document.getElementById('printBtn');if(pb)pb.onclick=()=>window.print();
+}
+
+// Init
+render();
+
+// Service Worker for PWA install
+if('serviceWorker' in navigator){
+  const sw=`data:text/javascript;base64,${btoa("self.addEventListener('fetch',e=>e.respondWith(fetch(e.request).catch(()=>new Response('Offline'))))")}`;
+  navigator.serviceWorker.register(sw).catch(()=>{});
+}
+</script>
+</body>
+</html>
